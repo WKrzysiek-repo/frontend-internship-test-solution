@@ -1,0 +1,76 @@
+$primary-color: #fff;
+$secondary-color: #fc888e;
+$black-color: #000;
+
+.popup {
+  background: $primary-color;
+  display: none;
+  height: 380px;
+  left: calc(50% - 175px);
+  position: fixed;
+  top: calc(50% - 190px);
+  width: 350px;
+  z-index: 2;
+}
+
+.close-popup {
+  background-color: $black-color;
+  border: 0;
+  border-radius: 50%;
+  color: $primary-color;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  height: 30px;
+  margin-left: 95%;
+  margin-top: -20%;
+  width: 30px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10%;
+  text-align: center;
+
+  input {
+    box-sizing: border-box;
+    height: 45px;
+    margin: 2% auto;
+    padding: 5%;
+    width: 250px;
+
+    &[type='checkbox'] {
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  .submit-btn {
+    background-color: $black-color;
+    border: 0;
+    color: $primary-color;
+    font-weight: 600;
+    height: 45px;
+    margin: 6% auto;
+    text-transform: uppercase;
+    width: 250px;
+
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+
+
+
+
+
